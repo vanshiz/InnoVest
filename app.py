@@ -16,7 +16,7 @@ companies_list = pickle.load(open('companies_dict.pkl','rb'))
 companies = pd.DataFrame(companies_list)
 sim = pickle.load(open('similarity.pkl','rb'))
 
-st.title('InnoVest')
+st.title('IdeaNest')
 option = st.selectbox(
     'In which company you are interested in?',
     companies['name'].values)
